@@ -3,8 +3,13 @@
 // Problem 1 (kilometerToMeter) starts
 
 function kilometerToMeter(kilometer){
-    var meter = kilometer * 1000;
-    return meter;
+    if(kilometer > -1 ){
+        var meter = kilometer * 1000;
+        return meter;
+    }
+    else{
+        return "Please provide a valid number!"
+    }
 }
 
 // Problem 1 (kilometerToMeter) ends
@@ -15,6 +20,9 @@ function budgetCalculator( watch, mobile, laptop){
     var sum = watch + mobile + laptop;
     return sum;
 }
+var watch = 50;
+var mobile = 100;
+var laptop = 500;
 
 // Problem 2 (budgetCalculator) ends
 
